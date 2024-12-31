@@ -1,0 +1,17 @@
+{
+    "schema_version": "v1",
+    "name_for_human": "汽车销售助手",
+    "name_for_model": "car_sales_assistant",
+    "description_for_human": "帮助用户查询汽车信息。",
+    "description_for_model": "提供汽车品牌、型号、价格和功能的详细信息。",
+    "auth": {
+        "type": "none"
+    },
+    "api": {
+        "type": "openapi",
+        "url": "https://yourproject.vercel.app/openapi.json"
+    },
+    "logo_url": "https://yourproject.vercel.app/logo.png",
+    "contact_email": "lancyzhou1027@gmail.com",
+    "legal_info_url": "https://yourproject.vercel.app/legal"
+}
