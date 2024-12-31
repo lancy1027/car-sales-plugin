@@ -1,0 +1,40 @@
+{
+    "openapi": "3.0.1",
+    "info": {
+        "title": "汽车销售助手 API",
+        "version": "1.0.0",
+        "description": "提供汽车信息的 API。"
+    },
+    "paths": {
+        "/cars": {
+            "get": {
+                "summary": "获取所有汽车信息",
+                "responses": {
+                    "200": {
+                        "description": "成功响应",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "id": { "type": "integer" },
+                                            "brand": { "type": "string" },
+                                            "model": { "type": "string" },
+                                            "price": { "type": "integer" },
+                                            "features": {
+                                                "type": "array",
+                                                "items": { "type": "string" }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
